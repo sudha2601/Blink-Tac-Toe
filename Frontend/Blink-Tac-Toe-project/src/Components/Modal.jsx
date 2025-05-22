@@ -1,8 +1,17 @@
 import React from 'react';
 
 const Modal = ({ onClose }) => {
+  const handleBackdropClick = (e) => {
+    if (e.target === e.currentTarget) {
+      onClose(); // Only close if the backdrop itself is clicked
+    }
+  };
+
   return (
-    <div className='fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50'>
+    <div
+      className='fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50'
+      onClick={handleBackdropClick}
+    >
       <div className='bg-white p-6 rounded-xl shadow-lg w-[95%] max-w-2xl relative max-h-[90vh] overflow-y-auto'>
         <button
           className='absolute top-3 right-3 text-gray-500 hover:text-red-600 text-xl cursor-pointer'
