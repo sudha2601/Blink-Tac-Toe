@@ -5,6 +5,7 @@ import CategorySelect from './Components/CategorySelect';
 import Grid from './Components/grid';
 import Play from './Components/Play';
 import Winner from './Components/winner';
+import Naming from './Components/naming';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/select-category" element={<CategorySelect/>} />
           <Route path="/play" element={<Grid/>} />
           <Route path="/winner" element={<Winner/>} />
+          <Route path="/Naming" element={<Naming/>} />
         </Routes>
       </div>
     </Router>

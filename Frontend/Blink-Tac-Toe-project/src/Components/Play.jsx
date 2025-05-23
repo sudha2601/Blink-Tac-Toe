@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 const Play = () => {
     const navigate=useNavigate();
     const change=()=>{
-        navigate('/select-category');
+        navigate('/Naming');
 
     }
   return (

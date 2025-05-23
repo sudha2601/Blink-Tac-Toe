@@ -4,7 +4,7 @@ import emojiCategories from '../storage/categories'; // Make sure this file expo
 
 const Grid = () => {
   const location = useLocation();
-  const { categories1, categories2 } = location.state || {};
+  const { categories1, categories2, player1, player2 } = location.state || {};
   const initialGrid = Array(3).fill(null).map(() => Array(3).fill(null));
   const [grid, setGrid] = useState(initialGrid);
   const [turn, setTurn] = useState(1); // 1 for Player 1, 2 for Player 2
@@ -84,7 +84,7 @@ const Grid = () => {
   if (!lastMove) return;
   const { row, col } = lastMove;
   if (winner(row, col)) {
-    navigate("/winner", { state: { turn: turn === 1 ? 2 : 1 } }); 
+    navigate("/winner", { state: { winner: turn === 1 ? 2 : 1 ,player1:player1,player2:player2} }); 
   }
 }, [grid]);
 
@@ -126,7 +126,7 @@ const Grid = () => {
     return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-slate-200">
       <h2 className="text-2xl font-bold mb-4 text-gray-700">
-        Player {turn}'s turn
+        {turn === 1 ? `${player1}'s turn` : `${player2}'s turn`}
       </h2>
       <div className="grid grid-cols-3 gap-2">
         {grid.map((row, rowIndex) =>
