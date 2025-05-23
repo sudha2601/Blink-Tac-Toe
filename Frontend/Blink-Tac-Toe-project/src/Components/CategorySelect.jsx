@@ -16,7 +16,7 @@ const CategorySelect = () => {
             setcategories1(category);
         } else {
             setcategories2(category);
-            navigate('/grid', { state: { categories1: categories1, categories2: category } });
+            navigate('/play', { state: { categories1: categories1, categories2: category } });
         }
     };
 

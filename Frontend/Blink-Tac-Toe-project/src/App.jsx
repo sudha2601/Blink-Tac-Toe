@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar';
 import CategorySelect from './Components/CategorySelect';
 import Grid from './Components/grid';
 import Play from './Components/Play';
+import Winner from './Components/winner';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/" element={<Play/>} />
           <Route path="/select-category" element={<CategorySelect/>} />
           <Route path="/play" element={<Grid/>} />
+          <Route path="/winner" element={<Winner/>} />
         </Routes>
       </div>
     </Router>
