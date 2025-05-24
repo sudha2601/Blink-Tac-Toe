@@ -3,6 +3,9 @@
 A fun and interactive emoji matching game built using **React**. Users are presented with a grid of emojis, and must click on matching pairs to make them vanish from the board. The game tracks the winner and displays a responsive result screen.
 
 ---
+## 🔗 Live Demo
+
+👉 [https://blinktactoee.netlify.app/](https://blinktactoee.netlify.app/)
 
 ## 🔧 Tech Stack
 
