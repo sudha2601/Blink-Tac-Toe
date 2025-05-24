@@ -1,12 +1,18 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
+const play1=new Audio('/game-start-6104.mp3');
 const Play = () => {
     const navigate=useNavigate();
     const change=()=>{
-        navigate('/Naming');
+    
+      play1.play(); // <- Add this
+      navigate("/Naming");
+      
 
     }
+
+
   return (
     <div className="flex items-center justify-center h-screen bg-gradient-to-tr from-blue-200 to-purple-300">
       <button
