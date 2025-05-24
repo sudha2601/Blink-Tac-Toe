@@ -2,10 +2,10 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './Components/Header';
 import Navbar from './Components/Navbar';
 import CategorySelect from './Components/CategorySelect';
-import Grid from './Components/grid';
+import Grid from './Components/Grid';
 import Play from './Components/Play';
-import Winner from './Components/winner';
-import Naming from './Components/naming';
+import Winner from './Components/Winner';
+import Naming from './Components/Naming';
 
 function App() {
   return (
