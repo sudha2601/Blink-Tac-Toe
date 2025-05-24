@@ -15,6 +15,7 @@ A fun and interactive emoji matching game built using **React**. Users are prese
 ## 😄 Emoji Categories
 
 The game currently uses a variety of fun emoji categories including:
+
 Weather: ['🌞', '🌧️', '⛈️', '❄️'],
 
 Emotions: ['😄', '😢', '😠', '😲'],
